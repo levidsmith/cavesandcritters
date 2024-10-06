@@ -30,6 +30,9 @@ public class Enemy : MonoBehaviour {
 
         if (iHitPoints <= 0) {
             Destroy(this.gameObject);
+            Player player = GameObject.FindFirstObjectByType<Player>();
+            player.iExp += enemyattributes.iExperience;
+            player.iCoin += 5;
         }
 
         float fRotateSpeed = 30f;

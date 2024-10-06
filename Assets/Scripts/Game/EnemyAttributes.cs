@@ -7,5 +7,6 @@ public class EnemyAttributes {
     public int iAdvantage;
     public int iSpeed;
     public int iExperience;
+    
 
 }

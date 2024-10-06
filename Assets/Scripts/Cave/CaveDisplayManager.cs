@@ -13,8 +13,8 @@ public class CaveDisplayManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-
-        matBackground.SetTextureOffset("_MainTex", new Vector2(0f, Time.time * 0.1f));
+        float fSpeed = 0.05f;
+        matBackground.SetTextureOffset("_MainTex", new Vector2(0f, Time.time * fSpeed));
 
     }
 }
