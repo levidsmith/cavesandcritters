@@ -1,0 +1,38 @@
+---
+- enemy:
+    name: bat
+    hp: 1
+    adv: 12
+    speed: 5
+    exp: 10
+    
+- enemy:
+    name: bear
+    hp: 19
+    adv: 12
+    speed: 30
+    exp: 10
+- enemy:
+    name: boar
+    hp: 11
+    adv: 11
+    speed: 40
+    exp: 50    
+- enemy: 
+    name: scorpion
+    hp: 1
+    adv: 11
+    speed: 10
+    exp: 10    
+- enemy: 
+    name: lizard
+    hp: 2
+    adv: 10
+    speed: 20
+    exp: 10
+- enemy: 
+    name: spider
+    hp: 5
+    adv: 12
+    speed: 30
+    exp: 15
