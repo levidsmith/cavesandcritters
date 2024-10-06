@@ -42,6 +42,9 @@ public class BattleManager : MonoBehaviour {
 
         Enemy enemy = Instantiate(EnemyPrefab, Vector3.zero, Quaternion.identity).GetComponent<Enemy>();
         enemy.enemyattributes = enemyattributes[iRand];
+
+        enemy.model = enemy.models[iRand];
+        enemy.models[iRand].SetActive(true);
         //Debug.Log(enemyattributes[0].strName);
 
         enemy.transform.SetParent(objRoom.transform);
@@ -55,6 +58,10 @@ public class BattleManager : MonoBehaviour {
     }
 
     public void doVictoryContinue() {
+        SceneManager.LoadScene("cave");
+    }
+
+    public void doRun() {
         SceneManager.LoadScene("cave");
     }
 }

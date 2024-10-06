@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class DisplayManager : MonoBehaviour {
     public GameObject PanelVictory;
+    public Material matBackground;
 
     // Start is called before the first frame update
     void Start() {
@@ -13,7 +14,8 @@ public class DisplayManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        
+        matBackground.SetTextureOffset("_MainTex", new Vector2(0f, Time.time * 0.1f));
+
     }
 
     public void showVictoryPanel() {

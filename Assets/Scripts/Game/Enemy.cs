@@ -12,6 +12,10 @@ public class Enemy : MonoBehaviour {
     public EnemyAttributes enemyattributes;
     public int iHitPoints;
 
+    public List<GameObject> models;
+
+    public GameObject model;
+
     // Start is called before the first frame update
     void Start() {
         iHitPoints = enemyattributes.iHitPoints;
@@ -28,6 +32,11 @@ public class Enemy : MonoBehaviour {
             Destroy(this.gameObject);
         }
 
+        float fRotateSpeed = 30f;
+        model.transform.Rotate(Vector3.up, fRotateSpeed * Time.deltaTime, Space.World);
+
 
     }
+
+
 }

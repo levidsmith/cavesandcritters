@@ -19,4 +19,12 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene("battle");
 
     }
+
+    public void doQuit() {
+        SceneManager.LoadScene("title");
+    }
+
+    public void doEquip() {
+        SceneManager.LoadScene("equip");
+    }
 }
